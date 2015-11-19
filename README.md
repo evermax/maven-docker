@@ -21,7 +21,7 @@ To do so, just type the following:
 ```
 docker run --name maven_data \
     -v /root/.m2 \
-    centurylink/ca-certs echo 'data for maven'
+    busybox echo 'data for maven'
 ```
 
 After that, you will have a docker container stopped, with a volume inside that is /root/.m2 and all the other containers that will reference it will have access to it.
